@@ -4,8 +4,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
-!pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-2.1.0+cpu.html
-!pip install torch-geometric
 
 import torch.nn.functional as F
 from torch_geometric.data import Data, Dataset, DataLoader

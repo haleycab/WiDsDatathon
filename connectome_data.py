@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 import torch
 from torch_geometric.data import Data
-
-
+\
 class Connectome:
     def __init__(self, matrix, adhd=None, sex=None):
         self._matrix = matrix

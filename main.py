@@ -28,11 +28,17 @@ def main():
     print("ADHD:", sample.adhd)
     print("Sex:", sample.sex)
 
-    # Modify values using setters
-    # sample.adhd = None
-    # sample.sex = None
+    # Clear labels to simulate "unknown"
+    sample.adhd = None
+    sample.sex = None
 
-    print("Modified attributes:")
+    # Predict using saved model
+    sample.predict_labels("Exam2/model.pt")
+
+    # Plot with predicted labels
+    sample.plot_connectome()
+
+
     print("ADHD:", sample.adhd)
     print("Sex:", sample.sex)
 
