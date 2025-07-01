@@ -43,7 +43,7 @@ Run the main training for **Graph Convolutional Neural Network** script:
 python main.py
 ```
 
-You can adjust architecture and data options in `config.yaml` or within each model's script.
+#You can adjust architecture and data options in `config.yaml` or within each model's script.
 
 ## 📁 Project Structure
 
@@ -67,7 +67,4 @@ You can adjust architecture and data options in `config.yaml` or within each mod
 * Add MLP layer to GCN to include metadata in the model
 * Clean up XGboost pipeline
 
-
-```
-```
 
