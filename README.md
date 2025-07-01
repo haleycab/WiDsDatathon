@@ -1,15 +1,15 @@
 
 # WiDS Datathon 2025 – ADHD & Sex Prediction from fMRI and Metadata
 
-This project was developed for the 2025 [WiDS Datathon]([https://www.widsconference.org/datathon.html](https://www.kaggle.com/competitions/widsdatathon2025/overview)), focusing on predicting ADHD diagnosis and sex from fMRI functional connectome data and socio-demographic, emotional, and parenting metadata.
+This project was developed for the 2025 [WiDS Datathon]([https://www.widsconference.org/datathon.html](https://www.kaggle.com/competitions/widsdatathon2025/overview)) and for my CS 211 Final Project, focusing on predicting ADHD diagnosis and sex from fMRI functional connectome data and socio-demographic, emotional, and parenting metadata.
 
 ## 🔍 Overview
 
-We implemented machine learning models to classify:
+I implemented machine learning models to classify:
 - **ADHD diagnosis** (binary)
 - **Sex** (binary)
 
-We used multiple machine learning models:
+I tried out multiple machine learning models:
 - XGBoost
 - Fully Connected Neural Networks
 - Graph Convolutional Neural Network (on connectomes only)
@@ -28,7 +28,6 @@ kaggle competitions download -c widsdatathon2025
 - Python ≥ 3.9  
 - PyTorch, PyTorch Geometric  
 - Scikit-learn, XGBoost, NumPy, Pandas  
-- (Optional) BrainGB for GNN baselines  
 
 Install dependencies:
 ```bash
