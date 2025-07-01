@@ -1,6 +1,4 @@
 # WiDsDatathon
-Certainly! Here's the full `README.md` content you can copy and paste directly into your file:
-
 ````markdown
 # WiDS Datathon 2025 – ADHD & Sex Prediction from fMRI and Metadata
 
@@ -70,12 +68,7 @@ You can adjust architecture and data options in `config.yaml` or within each mod
 * Model ensembling
 * Interpretation (e.g., saliency maps, SHAP for metadata)
 
-## 📄 License
-
-MIT License
 
 ```
-
-Let me know if you'd like to include your name, team members, or a quick "Results" section with accuracy metrics!
 ```
 
