@@ -42,7 +42,6 @@ Run the main training for **Graph Convolutional Neural Network** script:
 python main.py
 ```
 
-#You can adjust architecture and data options in `config.yaml` or within each model's script.
 
 ## 📁 Project Structure
 
