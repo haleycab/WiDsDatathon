@@ -1,27 +1,28 @@
-# WiDsDatathon
-````markdown
+
 # WiDS Datathon 2025 – ADHD & Sex Prediction from fMRI and Metadata
 
-This project was developed for the 2025 [WiDS Datathon](https://www.widsconference.org/datathon.html), focusing on predicting ADHD diagnosis and sex from fMRI functional connectome data and socio-demographic, emotional, and parenting metadata.
+This project was developed for the 2025 [WiDS Datathon]([https://www.widsconference.org/datathon.html](https://www.kaggle.com/competitions/widsdatathon2025/overview)), focusing on predicting ADHD diagnosis and sex from fMRI functional connectome data and socio-demographic, emotional, and parenting metadata.
 
 ## 🔍 Overview
 
-We implement and compare machine learning models to classify:
+We implemented machine learning models to classify:
 - **ADHD diagnosis** (binary)
 - **Sex** (binary)
 
-The core model is a **Graph Neural Network (GNN)** that integrates fMRI-derived functional connectomes with tabular metadata. We also benchmark other models including:
+We used multiple machine learning models:
 - XGBoost
 - Fully Connected Neural Networks
-- BrainNetCNN (on connectomes only)
-- Connectome-CNN
+- Graph Convolutional Neural Network (on connectomes only)
 
 ## 🧠 Data
 
-Data is from the [Healthy Brain Network](http://fcon_1000.projects.nitrc.org/indi/cmi_healthy_brain_network/) (HBN) dataset, provided by the datathon organizers. It includes:
+Data is from the [Healthy Brain Network]([(https://childmind.org/)]) (HBN) dataset, provided by the datathon organizers. It includes:
 - Functional brain connectivity matrices (fMRI)
 - Socio-demographic and behavioral metadata
 
+```
+kaggle competitions download -c widsdatathon2025
+```
 ## ⚙️ Requirements
 
 - Python ≥ 3.9  
@@ -36,7 +37,7 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-Run the main training script:
+Run the main training for **Graph Convolutional Neural Network** script:
 
 ```bash
 python main.py
@@ -49,7 +50,7 @@ You can adjust architecture and data options in `config.yaml` or within each mod
 ```
 .
 ├── data/                 # Processed datasets and splits
-├── models/               # GNN, CNN, and XGBoost model definitions
+├── models/               # GNN model definitions
 ├── GNN_helpers.py        # Core GCN implementation and training loop
 ├── utils/                # Preprocessing, metrics, and plotting
 ├── main.py               # Entry point
@@ -58,15 +59,13 @@ You can adjust architecture and data options in `config.yaml` or within each mod
 
 ## ✅ Features
 
-* Integrates tabular and graph data
-* Modular design for easy model swapping
-* Supports training/validation/testing splits with reproducibility
+* Easy training and testing for GCN model with class and method definitions
+* Includes specialized model GCN and flexible model XGboost for comparisons
 
 ## 📌 TODO
 
-* Hyperparameter tuning
-* Model ensembling
-* Interpretation (e.g., saliency maps, SHAP for metadata)
+* Add MLP layer to GCN to include metadata in the model
+* Clean up XGboost pipeline
 
 
 ```
