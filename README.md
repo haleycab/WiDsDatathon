@@ -17,7 +17,8 @@ I tried out multiple machine learning models:
 Data is from the [Healthy Brain Network]([(https://childmind.org/)]) (HBN) dataset, provided by the datathon organizers. It includes:
 - Functional brain connectivity matrices (fMRI)
 - Socio-demographic and behavioral metadata
-
+  
+Download all data provided:
 ```
 kaggle competitions download -c widsdatathon2025
 ```
