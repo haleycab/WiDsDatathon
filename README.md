@@ -18,7 +18,7 @@ Data is from the [Healthy Brain Network]([(https://childmind.org/)]) (HBN) datas
 - Functional brain connectivity matrices (fMRI)
 - Socio-demographic and behavioral metadata
   
-Download all data provided:
+Download raw data provided:
 ```
 kaggle competitions download -c widsdatathon2025
 ```
