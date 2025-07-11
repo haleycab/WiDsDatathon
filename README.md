@@ -48,6 +48,8 @@ pip install -r requirements.txt
 * Easy training and testing for GCN model with class and method definitions
 * Includes specialized model GCN and flexible model XGboost for comparisons
 
+### To Dos
+
 * Add MLP layer to GCN to include metadata in the model
 * Clean up XGboost pipeline
 
