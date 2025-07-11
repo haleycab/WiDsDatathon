@@ -37,11 +37,11 @@ pip install -r requirements.txt
 
 ```
 .
-├── data/                 # Processed datasets and splits
-├── models/               # GNN model definitions
+├── data/                 # Processed datasets 
+├── models/               # GNN model 
 ├── GNN_helpers.py        # Core GCN implementation and training loop
 ├── utils/                # Preprocessing, metrics, and plotting
-├── main.py               # Entry point
+├── main.py               # Easy script to load data and train / test model
 └── README.md
 ```
 * Easy training and testing for GCN model with class and method definitions
